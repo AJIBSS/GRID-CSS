@@ -1,0 +1,61 @@
+.overall{
+    width: 55%;
+    height: 100vh;
+    font-size: 15px;
+    margin: 0 auto;
+    /* padding: 290px; */
+
+}
+
+.parent{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    display: grid;
+    padding-top: 120px;
+    grid-template-columns:repeat(3,1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; i can use the line 12 and 13 code 
+     */
+    
+}
+
+.baby1{
+    background-color: hsl(31, 77%, 52%);
+    padding: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.father{
+    background-color: hsl(180, 100%, 27%);
+    padding: 50px;
+}
+
+.mother{
+    background-color:  hsl(184, 100%, 13%);
+    padding: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+
+}
+
+@media screen and (max-width:380px){
+   .parent{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+   } 
+   .baby1{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+   }
+   .mother{
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+
+
+   }
+}
